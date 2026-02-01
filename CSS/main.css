@@ -2,15 +2,66 @@
     display:flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     text-align: center;
     gap: 1em;
    
     /* background-color: green; */
     
 }
+/* top-categories */
+.top-categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.0rem;
+    padding: 1.0rem 1.5rem;
+
+}
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-inline: auto;
+}
+.category h3{
+    font-size: 2.0rem;
+    margin-right: auto;
+}
+.category h5{
+    font-size: 1.6rem;
+    border-bottom: 2px solid black;
+}
+.all-products{
+    padding: 2.0rem;
+    display: grid;
+    grid-template-rows: repeat(1,350px);
+    grid-template-columns: repeat(3,300px);
+    gap: 2.0rem;
+}
+.all-products img{
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+    
+}
+.models{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.0rem;
+   
+
+}
+.models span{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
 .model{
     margin-top: 6.0rem;
-    height: 500px;
+    height: 700px;
 }
 .secondary{
     border-radius: .8rem;
@@ -23,16 +74,43 @@
     border: none;
     padding: .5rem .8rem;
     cursor: pointer;
+    box-shadow: 0 5px 5px rgb(23, 24, 23);
     transition: .75s ease;
 
 }
 .secondary:hover{
     background-color: green;
+    color: rgb(247, 241, 241);
+=======
+    width: 90%;
+    margin-inline:auto;
+    gap: 1em;
+
+}
+.model{
+    height: 500px;
+}
+.secondary{
+    border-radius: .8rem;
+    background-color: green;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 200px;
+    border: none;
+    padding: .5rem .8rem;
+    cursor: pointer;
+
+}
+.secondary:hover{
+    background-color: brown;
     color: black;
+>>>>>>> 8db53a06c068d67748032269e68174c407e862ea
 }
 .details{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 30px;
     font-size: 1.6rem;
     font-weight: 500;
@@ -107,4 +185,20 @@
         height: 3.0rem;
         font-size: 1.2rem;
     }
+    .img-scroll{
+        display: none;
+    }
 }
+=======
+    gap: 10px;
+
+}
+@media (max-width:750px) {
+    .model{
+    height: 200px;
+}
+    .secondary{
+        width: 100px;
+    }
+}
+>>>>>>> 8db53a06c068d67748032269e68174c407e862ea
